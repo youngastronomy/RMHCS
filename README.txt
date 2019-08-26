@@ -26,7 +26,9 @@ into the setting of SSW_PACKAGES_INSTR. See the sample setup_ssw_env (Helicity S
 Please NOTE Red color text
 
 
-3. If you don't want to install it to SSW. You can set helicity_path in the own system.
+3. If you don't want to install it to SSW. You can set helicity_path in the own system. and
+add the PathToInstallCode/idl to your IDL search path. PathToInstallCode is like c:\ssw\packages\helicity\ (WIDNOWS)
+OR /usr/local/ssw/package/helicity/ (LINUX)
 For windows： set helicity_path="PathToInstallCode"
 For linux:    export(setenv) helicity_path="PathToInstallCode"
 
