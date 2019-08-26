@@ -29,3 +29,6 @@ Please NOTE Red color text
 3. If you don't want to install it to SSW. You can set helicity_path in the own system.
 For windows： set helicity_path="PathToInstallCode"
 For linux:    export(setenv) helicity_path="PathToInstallCode"
+
+
+SSW (http://www.lmsal.com/solarsoft/): The SolarSoft system is a set of integrated software libraries, data bases, and system utilities which provide a common programming and data analysis environment for Solar Physics. The SolarSoftWare (SSW) system is built from Yohkoh, SOHO, SDAC and Astronomy libraries and draws upon contributions from many members of those projects. It is primarily an IDL based system.
