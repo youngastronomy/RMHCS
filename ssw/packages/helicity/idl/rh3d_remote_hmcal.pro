@@ -62,12 +62,11 @@ if N_elements(email) eq 0 then email='naochsos@126.com'
 hmpath=getenv('helicity_path')
 if !version.os_family eq 'Windows' then begin
 
-  spawn,hmpath+'\idl\curl.exe  -G "http://sun.bao.ac.cn/NAOCHSOS/hmcalb?name='+name+'&email='+email+'"',result
- ; print,hmpath+'\pro\curl.exe  -G "http://10.12.0.5:8080/Helicity/hmcal?name='+name+'&email='+email+'"'
+  spawn,hmpath+'\idl\curl.exe -k -G -d '+'"'+ 'name='+name+'&email='+email+'"'+' "'+'https://sun.bao.ac.cn/NAOCHSOS/hmcalb'+'"',result
 
 endif else begin
    
-  spawn,'curl -s -G "http://sun.bao.ac.cn/NAOCHSOS/hmcalb?name='+name+'&email='+email+'"',result,/sh
+  spawn,'curl -k -s -G -d '+'"'+ 'name='+name+'&email='+email+'"'+' "'+'https://sun.bao.ac.cn/NAOCHSOS/hmcalb'+'"',result,/sh
 
 endelse
 

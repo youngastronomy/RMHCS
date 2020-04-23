@@ -46,10 +46,11 @@ pro rh3d_remote_status,name=name,Hm,Error,status
 
 hmpath=getenv('helicity_path')
 if !version.os_family eq 'Windows' then begin
- spawn,hmpath+'\idl\curl.exe  -G http://sun.bao.ac.cn/NAOCHSOS/checkstatusb?name='+name,result
+ spawn,hmpath+'\idl\curl.exe -k -G https://sun.bao.ac.cn/NAOCHSOS/checkstatusb?name='+name,result
 endif else begin
- spawn,'curl -s -G http://sun.bao.ac.cn/NAOCHSOS/checkstatusb?name='+name,result,/sh
+ spawn,'curl -k -s -G https://sun.bao.ac.cn/NAOCHSOS/checkstatusb?name='+name,result,/sh
 endelse
+
 
 ;help,result
 

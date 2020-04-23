@@ -19,7 +19,7 @@ pro rh3d_remote_test
 ;              small volume to obtain the similar results. 
 ;     
 ;              The failed with unknown reason data will be deleted from server 
-;              after 7 days. 
+;              after 7 days. r
 ;      
 ;              java 6+ needed:http://www.java.com
 ;              
